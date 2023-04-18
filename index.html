@@ -115,6 +115,7 @@
           <p>To find this data, we saved the list of Hartford crashes (not including Interstate crashes) provided by Jack from the UConn Crash Repository. We uploaded this data into mapshaper in order to create a map of Hartford to be combined with our intersection data later on. Using the “console” tab, we typed “-points x=Longitude y=Latitude” and “-proj wgs84” to make the points take the shape of Hartford rather than a grid.
 We looked at the Hartford crash map to determine intersections that have had high numbers of crashes since 2018. We then used placemark to create polygons in each of those intersections and named them according to their location as well as titled them as intersections. We exported this as a geojson file so that we will be able to add to it and eventually combine it with the mapshaper map.
 After that, we imported the placemark file into mapshaper and merged it with the existing map by typing “-join polygons10 fields=’intersection’” and then exported it as a geojson. </p>
+		 <img src="combined-map-polygons.png" style="width: 100%; margin: 30px 0">
 
 	<p>The following images show the placemark map of intersections, the mapshaper map of crashes, and the combined mapshaper map.
 </p>
